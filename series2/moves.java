@@ -87,9 +87,6 @@ public class Moves {
                         if (x >= 0 && x < n && y >= 0 && y < n && grid[temp.y][temp.x] > grid[y][x]) {
                             bfs.offer(new t(x, y, concat(temp.v, dir[i])));
                         }
-                        // else if (x < 0 || x > n || y < 0 || y >= n) System.out.println(i+1 + ". x = " +x+ ", y = " + y);
-                        // else if (x == 5 && y == 1) System.out.println(i+1 + ". y, x = "+ y + " "+ x + " " + grid[temp.y][temp.x] + " > "+grid[x][y]+" && " + visited[temp.y][temp.x] + " == false");
-                        // else System.out.println(i+1 + ". x = " +x+ ", y = " + y);
                     }
                 }
             }
